@@ -1,21 +1,17 @@
-Project README
+#NETSBOOK README
 
-1. The full names and SEAS login names of all team members
-Group: G20
-Albert Wang (albertwa)
-Jon Wong (jonwong)
-Roy Bae (roybse)
-Yun Shin (joeyshin)
+## A description of features implemented
 
-2. A description of features implemented
-All required features in the writeup have been implemented
+1. Login
+2. Logout
+3. User Profiles
+4. Posts + Status Updates
+5. Friends
+6. Messenger
+7. News
 
-3. Any extra credit claimed
-- Profile Picture
-- Infinite Scrolling
-- Invite user to current group chat room instead of creating a new room
+## A list of source files included 
 
-4. A list of source files included 
 app.js
 loader.js
 package.json
@@ -50,12 +46,10 @@ src/main/java/.../hw3/livy/ComputeRankLivy.java
 src/main/java/.../hw3/livy/SocialRankJob.java
 src/main/java/.../hw3/livy/MyPair.java
 
-5. A declaration that all of the code you are submitting was written by you 
-We (Albert Wang, Jon Wong, Roy Bae and Joey Shin of G20), declare that all code submitted in this project was written by us.
+## Instructions for building and running project:
 
-6. Instructions for building and running your project. The instructions must be sufficiently detailed for us to set up and run your application.
+1. Setup AWS configurations
 
-a. Setup AWS configurations
     Create Tables:
     adsorption → PK(S): “username”, SK(S): “url”
     article_to_user → PK(S) : “link”, SK(S): “username”
@@ -67,10 +61,10 @@ a. Setup AWS configurations
     posts → PK(N): “ID”
     rooms → PK(N): “room_id”
     users → PK(S): “username”
-b. Run “npm install” inside of the root project directory
-c. Run "node app.js" inside of the root project directory to launch the application
-d. Click "Sign Up" and create a new user profile
-e. Connect to your livy cluster
+2. Run 'npm install' inside of the root project directory
+3. Run 'node app.js' inside of the root project directory to launch the application
+4. Click "Sign Up" and create a new user profile
+5. Connect to your livy cluster
     If you are having issues with this and want to run the algorithm, you can do the following: 
     Go to ComputeRankLivy.java
     Delete all instances of livy and “client”
