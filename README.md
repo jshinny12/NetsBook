@@ -86,9 +86,10 @@ src/main/java/.../hw3/livy/MyPair.java
     rooms → PK(N): “room_id”
     users → PK(S): “username”
 2. Run 'npm install' inside of the root project directory
-3. Run 'node app.js' inside of the root project directory to launch the application
-4. Click "Sign Up" and create a new user profile
-5. Connect to your livy cluster
+3. Compile and build project using maven
+4. Run 'node app.js' inside of the root project directory to launch the application
+5. Click "Sign Up" and create a new user profile
+6. Connect to your livy cluster
     
     If you are having issues with this and want to run the algorithm, you can do the following: 
     
