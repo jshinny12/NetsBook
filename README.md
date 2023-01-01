@@ -89,9 +89,14 @@ src/main/java/.../hw3/livy/MyPair.java
 3. Run 'node app.js' inside of the root project directory to launch the application
 4. Click "Sign Up" and create a new user profile
 5. Connect to your livy cluster
+    
     If you are having issues with this and want to run the algorithm, you can do the following: 
+    
     Go to ComputeRankLivy.java
+    
     Delete all instances of livy and “client”
+    
     Simply add: SocialRankJob sr = new SocialRankJob(); sr.initialize(); sr.run();
+    
     Run ComputeRankLivy.java
 
