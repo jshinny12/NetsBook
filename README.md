@@ -13,37 +13,61 @@
 ## A list of source files included 
 
 app.js
+
 loader.js
+
 package.json
+
 package-lock.json
+
 pom.xml
 
 models/database.js
+
 models/post_database.js
+
 models/update_user_model.js
+
 models/chat_model.js
 
 routes/routes.js
+
 routes/profile_routes.js
+
 routes/update_user_routes.js
+
 routes/chat_routes.js
 
 views/chat_room.ejs
+
 views/chat.ejs
+
 views/friendvisualizer.ejs
+
 views/home.ejs
+
 views/join_chat.ejs
+
 views/login.ejs
+
 views/main.ejs
+
 views/newsfeed.ejs
+
 views/profile_page.ejs
+
 views_profile.ejs
+
 views/results.ejs
+
 views/signup.ejs
+
 views/update_user.ejs
 
 src/main/java/.../hw3/livy/ComputeRankLivy.java
+
 src/main/java/.../hw3/livy/SocialRankJob.java
+
 src/main/java/.../hw3/livy/MyPair.java
 
 ## Instructions for building and running project:
