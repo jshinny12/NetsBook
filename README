@@ -1,0 +1,79 @@
+Project README
+
+1. The full names and SEAS login names of all team members
+Group: G20
+Albert Wang (albertwa)
+Jon Wong (jonwong)
+Roy Bae (roybse)
+Yun Shin (joeyshin)
+
+2. A description of features implemented
+All required features in the writeup have been implemented
+
+3. Any extra credit claimed
+- Profile Picture
+- Infinite Scrolling
+- Invite user to current group chat room instead of creating a new room
+
+4. A list of source files included 
+app.js
+loader.js
+package.json
+package-lock.json
+pom.xml
+
+models/database.js
+models/post_database.js
+models/update_user_model.js
+models/chat_model.js
+
+routes/routes.js
+routes/profile_routes.js
+routes/update_user_routes.js
+routes/chat_routes.js
+
+views/chat_room.ejs
+views/chat.ejs
+views/friendvisualizer.ejs
+views/home.ejs
+views/join_chat.ejs
+views/login.ejs
+views/main.ejs
+views/newsfeed.ejs
+views/profile_page.ejs
+views_profile.ejs
+views/results.ejs
+views/signup.ejs
+views/update_user.ejs
+
+src/main/java/.../hw3/livy/ComputeRankLivy.java
+src/main/java/.../hw3/livy/SocialRankJob.java
+src/main/java/.../hw3/livy/MyPair.java
+
+5. A declaration that all of the code you are submitting was written by you 
+We (Albert Wang, Jon Wong, Roy Bae and Joey Shin of G20), declare that all code submitted in this project was written by us.
+
+6. Instructions for building and running your project. The instructions must be sufficiently detailed for us to set up and run your application.
+
+a. Setup AWS configurations
+    Create Tables:
+    adsorption → PK(S): “username”, SK(S): “url”
+    article_to_user → PK(S) : “link”, SK(S): “username”
+    interest_to_article → PK(S): “interest”, SK(N): “inxid”
+    interest_to_user → PK(S): “interest”, SK(S): “username”
+    interest_to_article → PK(S): “keyword”, SK(N): “newsID”
+    messages → PK(N): “msg_id”
+    news → PK(S): “link”
+    posts → PK(N): “ID”
+    rooms → PK(N): “room_id”
+    users → PK(S): “username”
+b. Run “npm install” inside of the root project directory
+c. Run "node app.js" inside of the root project directory to launch the application
+d. Click "Sign Up" and create a new user profile
+e. Connect to your livy cluster
+    If you are having issues with this and want to run the algorithm, you can do the following: 
+    Go to ComputeRankLivy.java
+    Delete all instances of livy and “client”
+    Simply add: SocialRankJob sr = new SocialRankJob(); sr.initialize(); sr.run();
+    Run ComputeRankLivy.java
+
